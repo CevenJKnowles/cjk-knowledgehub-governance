@@ -1,4 +1,4 @@
-# cjk-knowledghub-governance
+# cjk-knowledgehub-governance
 
 Internal governance + workflow documentation revision system for CJK_Knowledgehub.
 
