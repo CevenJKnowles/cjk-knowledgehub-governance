@@ -8,6 +8,12 @@ created: 2026-02-16
 updated: 2026-02-16
 ```
 ---
+# CJK KnowledgeHub 2026 Brief
+
+2026-02-08 by Ceven J. Knowles
+
+---
+---
 # ⚠ Deprecated
 Superseded by: PLN-MAP-01-project-workflow.md
 Date: 2026-02-16
@@ -18,10 +24,6 @@ Replaced By:
 - DAT-REF-01-background-data.md
 
 ---
-# CJK KnowledgeHub 2026 Brief
-
-2026-02-08 by Ceven J. Knowles
-
 ---
 
 ## Purpose & Overview

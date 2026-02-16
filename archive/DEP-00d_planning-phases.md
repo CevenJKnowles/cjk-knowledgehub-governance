@@ -8,12 +8,15 @@ created: 2026-02-16
 updated: 2026-02-16
 ```
 ---
+# GitHub & Public-facing GitPage Redesign  
+
+---
+---
 # ⚠ Deprecated
 Superseded by: PLN-MAP-01-project-workflow.md
 Date: 2026-02-16
 
 ---
-# GitHub & Public-facing GitPage Redesign  
 
 ### Planning Phases (Canonical v1.0)
 

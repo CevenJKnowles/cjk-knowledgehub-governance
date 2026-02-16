@@ -8,6 +8,7 @@ created: 2026-02-16
 updated: 2026-02-16
 ---
 
+---
 # Strategic Direction Notes
 
 ## 1. Operational Framing

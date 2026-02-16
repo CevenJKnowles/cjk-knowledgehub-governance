@@ -55,6 +55,11 @@ No structural changes without confirmation.
 - Legacy planning files deprecated and archived.
 - Split 00a_CJK_KH_Brief.md.
 - Deprecated legacy hybrid brief.
+- Split `04c_implementation-a-content-build.md` into control doctrine + planning next-step doc.
+* Deprecated the legacy hybrid Phase 4 implementation document.
+* Consolidated Phase 4 snapshot files into SNP-PH4-01.
+- Deprecated legacy Phase 4 snapshot fragments.
+  
 ---
 ## 3. In Progress
 
@@ -64,9 +69,9 @@ No structural changes without confirmation.
 ---
 ## 4. Pending High Priority
 
-1. Split 04c_implementation-a-content-build.md.
-2. Consolidate Phase 4 snapshot files.
-3. Finalise CONTROL layer naming.
+1. Consolidate Phase 4 snapshot files.
+2. Finalise CONTROL layer naming.
+
 ---
 ## 5. Next Immediate Task
 

@@ -8,14 +8,17 @@ created: 2026-02-16
 updated: 2026-02-16
 ```
 ---
+# Discussion Checklist by Phase
+
+ GitHub & GitPage Redesign  
+
+---
+---
 # ⚠ Deprecated
 Superseded by: PLN-MAP-01-project-workflow.md
 Date: 2026-02-16
 
 ---
-# Discussion Checklist by Phase
-
- GitHub & GitPage Redesign  
 
 ---
 

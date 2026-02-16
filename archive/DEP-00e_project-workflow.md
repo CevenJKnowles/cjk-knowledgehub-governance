@@ -8,12 +8,16 @@ created: 2026-02-16
 updated: 2026-02-16
 ```
 ---
+# Canonical Project Workflow (End-to-End)
+
+---
+---
 # ⚠ Deprecated
 Superseded by: PLN-MAP-01-project-workflow.md
 Date: 2026-02-16
 
 ---
-# Canonical Project Workflow (End-to-End)
+---
 
 **Purpose:**  
 Define the complete, professional workflow for designing, building, maintaining, and evolving the CJK KnowledgeHub without drift, scope creep, or loss of intent.
