@@ -1,5 +1,5 @@
 ---
-id: PLN-PLAN-02
+id: PLN-PLN-02
 layer: planning
 type: plan
 phase: X

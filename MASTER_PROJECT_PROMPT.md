@@ -66,6 +66,7 @@ No nested layer hierarchies unless explicitly frozen via ADR.
 All active files must begin with:
 
 ---
+
 id: <ID>
 layer: <layer>
 type: <type>
@@ -73,7 +74,6 @@ phase: <number or X>
 status: active | deprecated
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
----
 
 No additional YAML keys unless frozen via ADR.
 

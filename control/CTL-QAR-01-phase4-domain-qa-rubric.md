@@ -1,3 +1,13 @@
+---
+id: CTL-QAR-01
+layer: control
+type: QAR
+phase: P4
+status: active
+created: 2026-02-16
+updated: 2026-02-16
+---
+---
 # Phase 4 — Domain QA & Review Rubric (Canonical)
 
 **Project:** CJK_Knowledgehub  

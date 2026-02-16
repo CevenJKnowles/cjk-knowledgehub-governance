@@ -1,3 +1,13 @@
+---
+id: CTL-DOD-01
+layer: control
+type: DOD
+phase: P4
+status: active
+created: 2026-02-12
+updated: 2026-02-16
+---
+---
 # Phase 4 — Definition of Done (DoD)  
 ## Per Page Type (Canonical)
 

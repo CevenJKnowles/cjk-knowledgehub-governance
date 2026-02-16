@@ -1,5 +1,14 @@
-# Phase 4 — Implementation & Content Build  
-## Kickoff Checklist (Canonical)
+---
+id: CTL-GTE-01
+layer: control
+type: GTE
+phase: P4
+status: active
+created: 2026-02-16
+updated: 2026-02-16
+---
+---
+# Phase 4 — Kickoff Checklist (Canonical)
 
 **Project:** CJK_Knowledgehub  
 **Phase:** 4 (Implementation & Content Build)  

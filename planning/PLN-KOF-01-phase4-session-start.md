@@ -1,3 +1,14 @@
+---
+id: PLN-KOF-01
+layer: planning
+type: KOF
+phase: P4
+status: active
+created: 2026-02-16
+updated: 2026-02-16
+---
+
+---
 # Phase 4 — Session Bootstrap Prompt
 
 Project: CJK_Knowledgehub  
