@@ -1,8 +1,8 @@
 ---
 id: PLN-PLN-02
-layer: planning
-type: plan
-phase: X
+layer: PLN
+type: PLN
+phase: P4
 status: active
 created: 2026-02-12
 updated: 2026-02-16

@@ -1,6 +1,6 @@
 ---
 id: PLN-KOF-01
-layer: planning
+layer: PLN
 type: KOF
 phase: P4
 status: active

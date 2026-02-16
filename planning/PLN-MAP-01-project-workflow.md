@@ -1,7 +1,7 @@
 ---
 id: PLN-MAP-01
-layer: planning
-type: structural-map
+layer: PLN
+type: MAP
 phase: X
 status: active
 created: 2026-02-16
