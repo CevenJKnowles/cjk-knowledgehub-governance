@@ -89,5 +89,9 @@ None blocking.
 Initiate Phase 5 preparation under stabilized governance layer.
 
 ---
+## Next Session Anchor
 
+Phase 5 planning initialization.
+
+---
 This document must be updated whenever structural or authority changes occur.

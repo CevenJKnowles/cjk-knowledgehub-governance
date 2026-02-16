@@ -193,7 +193,8 @@ No silent expansion.
 
 Every structural change must:
 
-- Update CURRENT_STATE.md
+- Update SNP-CUR-01-current-state.md
+
 - Update DEPRECIATION_LOG if applicable
 - Preserve determinism
 - Preserve traceability

@@ -13,7 +13,8 @@ updated: 2026-02-16
 This file aligns the current working session with:
 
 - MASTER_PROJECT_PROMPT.md
-- CURRENT_STATE.md
+- SNP-CUR-01-current-state.md
+
 
 It defines priority tasks for this session only.
 
@@ -23,7 +24,8 @@ It defines priority tasks for this session only.
 Before beginning work:
 
 1. Review MASTER_PROJECT_PROMPT.md
-2. Review CURRENT_STATE.md
+2. Review SNP-CUR-01-current-state.md
+
 3. Confirm no conflict with frozen rules
 4. Identify today's target tasks
 
@@ -45,7 +47,8 @@ No work begins without alignment.
 ## Tier 3 – Cleanup
 - Move deprecated files to /archive
 - Update DEPRECIATION_LOG.md
-- Update CURRENT_STATE.md
+- Update SNP-CUR-01-current-state.md
+
 
 ---
 # 3. Session Constraints
@@ -60,7 +63,8 @@ No work begins without alignment.
 
 Before closing session:
 
-- Update CURRENT_STATE.md
+- Update SNP-CUR-01-current-state.md
+
 - Update updated: field in modified files
 - Log any deprecated files
 - Confirm next session priorities
