@@ -10,7 +10,7 @@ updated: 2026-02-16
 ---
 # cjk-knowledgehub-governance
 
-Internal governance and documentation revision system for CJK KnowledgeHub.
+Internal governance and documentation revision system for [CJK KnowledgeHub](https://github.com/CevenJKnowles/cjk-knowledgehub).
 
 This repository exists to:
 
