@@ -1,12 +1,13 @@
-```yaml
+---
 id: GOV-POL-01
-layer: governance
-type: policy
+layer: GOV
+type: POL
 phase: X
 status: active
-created: 2026-02-13
+created: 2026-02-16
 updated: 2026-02-16
-```
+---
+---
 # MASTER_PROJECT_PROMPT
 ## CJK KnowledgeHub Governance Control System
 Version: 1.0 (Frozen)
@@ -67,14 +68,14 @@ All active files must begin with:
 
 ---
 
-id: <ID>
-layer: <layer>
-type: <type>
-phase: <number or X>
-status: active | deprecated
-created: YYYY-MM-DD
-updated: YYYY-MM-DD
+## YAML Template (example only)
 
+```yaml
+text
+layer_example: <layer>
+type_example: <type>
+phase_example: <number or X>
+```
 No additional YAML keys unless frozen via ADR.
 
 ---

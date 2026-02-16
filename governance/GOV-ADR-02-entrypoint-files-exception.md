@@ -44,3 +44,8 @@ These files function as *entrypoint/meta* documents for fast orientation and dri
 - Root-level clarity improves onboarding and reduces mis-navigation.
 - Determinism remains intact for all other artifacts.
 - Exception scope is bounded and auditable via ADR.
+
+---
+# Depreciated Files
+
+Archive is exempt from strict YAML vocab
