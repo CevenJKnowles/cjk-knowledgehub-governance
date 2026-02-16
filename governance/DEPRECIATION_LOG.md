@@ -75,3 +75,12 @@ Multiple Phase 4 snapshot artifacts created retrieval ambiguity.
 Consolidated into a single canonical Phase 4 snapshot.
 
 ---
+## 2026-02-16 — Normalize Phase 4 Vective Intent Freeze
+
+Renamed:
+- 04f_repo-a-dir-vective-intent-freeze.md
+→ GOV-INT-05-phase4-vective-evaluation-intent-freeze.md
+
+Reason:
+YAML schema normalization and layer correction to governance.
+No content changes.

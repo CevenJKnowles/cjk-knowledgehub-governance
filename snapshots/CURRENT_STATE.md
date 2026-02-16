@@ -59,6 +59,8 @@ No structural changes without confirmation.
 * Deprecated the legacy hybrid Phase 4 implementation document.
 * Consolidated Phase 4 snapshot files into SNP-PH4-01.
 - Deprecated legacy Phase 4 snapshot fragments.
+- - Normalized Phase 4 Vective intent freeze to governance schema.
+- Corrected YAML to frozen format.
   
 ---
 ## 3. In Progress
