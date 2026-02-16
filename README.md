@@ -1,13 +1,13 @@
 ---
 id: GOV-MAP-00
-layer: governance
-type: structural-map
+layer: GOV
+type: MAP
 phase: X
 status: active
-created: 2026-02-13
+created: 2026-02-16
 updated: 2026-02-16
 ---
-
+---
 # cjk-knowledgehub-governance
 
 Internal governance and documentation revision system for CJK KnowledgeHub.

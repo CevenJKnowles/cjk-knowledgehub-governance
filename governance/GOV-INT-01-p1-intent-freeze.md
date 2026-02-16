@@ -1,8 +1,8 @@
 ```yaml
 id: GOV-INT-01
-layer: governance
-type: intent freeze
-phase: p1
+layer: GOV
+type: INT
+phase: P1
 status: frozen
 created: 2026-02-08
 updated: 2026-02-12

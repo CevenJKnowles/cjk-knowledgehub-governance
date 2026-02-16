@@ -1,7 +1,7 @@
 ---
 id: GOV-MAP-01
-layer: governance
-type: structural-map
+layer: GOV
+type: MAP
 phase: X
 status: active
 created: 2026-02-16

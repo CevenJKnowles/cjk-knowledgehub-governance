@@ -1,7 +1,7 @@
 ---
 id: SNP-CUR-01
-layer: snapshot
-type: current-state
+layer: SNP
+type: CUR
 phase: X
 status: active
 created: 2026-02-13

@@ -1,13 +1,13 @@
 ---
-id: PLN-PLAN-01
-layer: planning
-type: plan
+id: PLN-KOF-00
+layer: PLN
+type: KOF
 phase: X
 status: active
-created: 2026-02-13
+created: 2026-02-16
 updated: 2026-02-16
 ---
-
+---
 # SESSION PROMPT
 
 This file aligns the current working session with:

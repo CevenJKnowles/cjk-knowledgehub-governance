@@ -1,6 +1,6 @@
 ---
 id: CTL-GTE-01
-layer: control
+layer: CTL
 type: GTE
 phase: P4
 status: active

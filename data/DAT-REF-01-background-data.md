@@ -1,7 +1,7 @@
 ---
 id: DAT-REF-01
-layer: data
-type: reference
+layer: DAT
+type: REF
 phase: X
 status: active
 created: 2026-02-16

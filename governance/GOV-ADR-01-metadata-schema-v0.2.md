@@ -1,7 +1,7 @@
 ```yaml
 id: GOV-ADR-01
-layer: governance
-type: decision record
+layer: GOV
+type: ADR
 phase: X
 status: frozen
 created: 2026-02-10

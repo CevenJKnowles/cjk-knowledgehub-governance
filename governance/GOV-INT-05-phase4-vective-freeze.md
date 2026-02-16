@@ -1,8 +1,8 @@
 ---
 id: GOV-INT-05
-layer: governance
-type: intent-freeze
-phase: 4
+layer: GOV
+type: INT
+phase: P4
 status: active
 created: 2026-02-16
 updated: 2026-02-16

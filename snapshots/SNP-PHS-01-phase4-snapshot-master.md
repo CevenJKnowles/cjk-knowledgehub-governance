@@ -1,13 +1,13 @@
 ---
-id: SNP-PH4-01
-layer: snapshot
-type: phase-snapshot
-phase: 4
+id: SNP-PHS-01
+layer: SNP
+type: PHS
+phase: P4
 status: active
 created: 2026-02-16
 updated: 2026-02-16
 ---
-
+---
 # Phase 4 — Snapshot Master
 
 ## 1. Phase Context

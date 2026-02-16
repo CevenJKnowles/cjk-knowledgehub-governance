@@ -1,13 +1,13 @@
 ---
 id: CTL-DOC-01
-layer: control
-type: doctrine
-phase: X
+layer: CTL
+type: DOC
+phase: P4
 status: active
 created: 2026-02-16
 updated: 2026-02-16
 ---
-
+---
 # Phase 4 — Implementation & Content Build
 
 ### Locked Architectural Direction & Source of Truth

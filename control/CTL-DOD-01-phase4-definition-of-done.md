@@ -1,6 +1,6 @@
 ---
 id: CTL-DOD-01
-layer: control
+layer: CTL
 type: DOD
 phase: P4
 status: active

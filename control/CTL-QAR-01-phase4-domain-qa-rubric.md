@@ -1,6 +1,6 @@
 ---
 id: CTL-QAR-01
-layer: control
+layer: CTL
 type: QAR
 phase: P4
 status: active
