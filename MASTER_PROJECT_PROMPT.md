@@ -7,151 +7,199 @@ status: active
 created: 2026-02-13
 updated: 2026-02-16
 ```
-# MASTER PROJECT PROMPT
-
-Project: cjk-knowledgehub-governance  
-Scope: Internal Governance & Documentation Revision System  
-
----
----
-# 1. Purpose
-
-This repository governs the structural revision, cleanup, and systematisation of documentation for the CJK KnowledgeHub project.
-
-It is not the KnowledgeHub itself.
-
-It exists to:
-
-- Enforce structural discipline
-- Remove redundancy
-- Clarify authority
-- Stabilise documentation hierarchy
-- Prevent drift during revision
-- Provide deterministic file nomenclature
-- Maintain a clean internal governance control pack
-
-This is a finite, controlled refactor project.
+# MASTER_PROJECT_PROMPT
+## CJK KnowledgeHub Governance Control System
+Version: 1.0 (Frozen)
 
 ---
 
-# 2. Operating Principles
+# 1. Authority
 
-## 2.1 Determinism
+This document is the single source of truth for governance rules inside:
+
+cjk-knowledgehub-governance
+
+No structural decision may violate this document.
+
+If conflict arises:
+MASTER_PROJECT_PROMPT overrides all other files.
+
+---
+
+# 2. Deterministic Naming Convention
+
 All files must follow:
 
 [LAYER]-[TYPE]-[SEQ]-[SLUG].md
 
-ID format:
+Example:
+GOV-INT-01-p1-intent-freeze.md
+
+ID format (immutable):
 [LAYER]-[TYPE]-[SEQ]
 
-IDs are immutable.
+The SLUG is descriptive but non-authoritative.
+The ID is the authoritative identity.
+
+IDs never change.
 
 ---
 
-## 2.2 Layer Hierarchy
+# 3. Folder Structure (Flat Per Layer)
 
-Authority precedence:
+Allowed top-level folders:
 
-governance  
-> control  
-> planning  
-> execution  
-> snapshot  
+/governance
+/control
+/planning
+/execution
+/snapshots
+/data
+/archive
 
-Data and archive folders hold no authority.
-
----
-
-## 2.3 Structural Constraints
-
-- One folder per layer.
-- Flat structure.
-- No nested folders unless explicitly approved.
-- No silent structural changes.
-- No ID reuse.
-- No file deletion — only deprecation.
+No nested layer hierarchies unless explicitly frozen via ADR.
 
 ---
 
-## 2.4 YAML Policy
+# 4. YAML Schema (Frozen)
 
-Each file must contain:
+All active files must begin with:
 
-id  
-layer  
-type  
-phase  
-status  
-created  
-updated  
+---
+id: <ID>
+layer: <layer>
+type: <type>
+phase: <number or X>
+status: active | deprecated
+created: YYYY-MM-DD
+updated: YYYY-MM-DD
+---
 
-Full words are used in YAML (not abbreviations).
+No additional YAML keys unless frozen via ADR.
 
 ---
 
-## 2.5 Deprecation Rules
+# 5. Layer Hierarchy (Authority Order)
 
-- Deprecated files move to /archive.
-- Filename is prefixed with: {DEP}-
-- YAML status: deprecated
-- Entry logged in DEPRECIATION_LOG.md
-- IDs are never reused.
+governance > control > planning > execution > snapshots > data > archive
 
----
+Higher layers override lower layers.
 
-## 2.6 Snapshot Discipline
-
-snapshots/CURRENT_STATE.md is the canonical operational state reference.
-
-It must always reflect:
-
-- Current working phase
-- Completed work
-- Pending tasks
-- Next priorities
+Snapshots record history.
+They do not define rules.
 
 ---
 
-# 3. Scope Boundaries
+# 6. TYPE Registry (Frozen Vocabulary)
 
-This repository:
+No new TYPE codes may be introduced without freezing vocabulary via ADR.
 
-- Does NOT contain KnowledgeHub content artifacts.
-- Does NOT serve as portfolio narrative.
-- Does NOT function as a public-facing document.
+## 6.1 Governance (GOV)
 
-It is an internal governance control system only.
+INT  — Intent Freeze  
+ADR  — Architecture Decision Record  
+MAP  — Structural Map  
+POL  — Policy  
+SCH  — Schema  
+
+## 6.2 Control (CTL)
+
+DOC  — Doctrine  
+DOD  — Definition of Done  
+QAR  — QA Rubric  
+GTE  — Gate  
+
+## 6.3 Planning (PLN)
+
+PLN  — Plan  
+CHK  — Checklist  
+MAP  — Structural Map  
+KOF  — Kickoff  
+
+## 6.4 Execution (EXE)
+
+IMP  — Implementation  
+BLD  — Build  
+RUN  — Run Log  
+
+## 6.5 Snapshot (SNP)
+
+CUR  — Current State  
+PHS  — Phase Snapshot  
+LOG  — Log  
+
+## 6.6 Data (DAT)
+
+CVP  — CV Payload  
+LNK  — Link Registry  
+RAW  — Raw Data  
+REF  — Reference  
+
+## 6.7 Archive (ARC)
+
+DEP  — Deprecated
 
 ---
 
-# 4. Role Definition
+# 7. Deprecation Protocol
 
-Ceven:
-- Project owner
-- Final authority
-- Decision maker
+Files are never deleted.
 
-Assistant:
-- Governance enforcer
-- Structural reviewer
-- Drift detector
-- Workflow optimiser
-- Must not assume or improvise intent
+To deprecate:
 
-Ambiguity must be resolved before execution.
+1. Move to /archive
+2. Prefix filename with: DEP-
+3. Update YAML:
+   status: deprecated
+4. Add banner at top:
 
----
-## Session Resume Requirement
+# ⚠ Deprecated
+Superseded by: <New File>
+Date: YYYY-MM-DD
 
-Before executing any task:
+All deprecations must be logged in:
 
-1. Read MASTER_PROJECT_PROMPT.md
-2. Read snapshots/CURRENT_STATE.md
-3. Read SESSION_PROMPT.md
-4. Confirm alignment before proceeding
-
-No assumptions are allowed without this review.
+governance/DEPRECIATION_LOG.md
 
 ---
 
-End of MASTER PROJECT PROMPT.
+# 8. Freeze Rules
+
+- Intent Freeze documents lock scope.
+- ADR documents lock architecture.
+- Doctrine documents lock implementation architecture.
+- Definition of Done locks quality gates.
+- QA Rubrics lock evaluation discipline.
+
+Nothing bypasses a freeze without explicit superseding document.
+
+---
+
+# 9. Vocabulary Expansion Rule
+
+If a new TYPE, layer, or structural rule is needed:
+
+1. Draft ADR.
+2. Freeze via governance approval.
+3. Update TYPE Registry.
+4. Increment version.
+
+No silent expansion.
+
+---
+
+# 10. Resume Safety Protocol
+
+Every structural change must:
+
+- Update CURRENT_STATE.md
+- Update DEPRECIATION_LOG if applicable
+- Preserve determinism
+- Preserve traceability
+
+No ambiguous states allowed.
+
+---
+
+End of MASTER_PROJECT_PROMPT
+
