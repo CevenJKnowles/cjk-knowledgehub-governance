@@ -235,7 +235,6 @@ Creative Lead for global premium clients, delivering explainer videos and intera
 	- Managed distributed client and agency stakeholders across review cycles
 	- Structured complex concepts into clear communications deliverables
 	- Integrated early AI-assisted video tools into evolving workflows
-	- 97.5% on-time delivery (multi-stage pipelines)
 
 **Interdisciplinary Media Designer**
 *Self-employed | International | May 1999 - Jun 2025*
