@@ -3,12 +3,12 @@ id: INT-006
 title: KnowledgeHub Strategic Reset — Intent Freeze
 type: int
 status: locked
-version: "1.1"
+version: "1.2"
 created: 2026-03-19
 updated: 2026-03-19
 provenance: ai-assisted
 tags: [knowledgehub, intent-freeze, ia, positioning, reset]
-related: [SNP-LOG-001, TPL-001]
+related: [LOG-001, TPL-001]
 ref: []
 repo: []
 ---
@@ -165,9 +165,9 @@ Single page. First person. The arc from 1999 to now. Honest about the transition
 
 ---
 
-#### Creative
+#### Legacy
 
-A dedicated section honouring CJK's creative history with its own artefacts. Presented on its own terms, not subordinated to the AI work. The right audience reads it correctly.
+A dedicated section honouring CJK's interdisciplinary design history with its own artefacts. Presented on its own terms, not subordinated to the AI work. The right audience reads it correctly.
 
 Scope, content, and structure to be defined in a future ADR. Not current build priority.
 
@@ -203,7 +203,8 @@ The following documents are superseded by this freeze and must be formally depre
 | GOV-INT-03 | Execution plan built on obsolete IA |
 | GOV-INT-04 | Repository structure built on obsolete IA |
 | GOV-INT-05 | Vective evaluation doctrine -- Vective deprecated entirely |
-| mkdocs.yml (current) | Reflects old six-domain structure |
+| mkdocs.yml (current) | Reflects old six-domain structure  
+| MASTER_PROMPT_v1 | replaced by new MASTER_PROMPT |
 
 Deprecation procedure per MASTER_PROJECT_PROMPT.md Section 7.
 
@@ -214,16 +215,14 @@ Deprecation procedure per MASTER_PROJECT_PROMPT.md Section 7.
 The following items are not yet locked and must be resolved before build begins:
 
 | Item | Owner | Priority |
-|---|---|---|
-| Simpleshow description exact wording | CJK | High |
-| Navigation order for six sections | CJK + Claude | High |
-| Creative section scope and content | CJK | Low -- deferred to ADR |
+|---|---|---| 
+Legacy section scope and content | CJK | Low -- deferred to ADR |
 
 ---
 
 ## 10. Locked Decisions Reference
 
-All KH and NC decisions locked in session SNP-LOG-001 are in force. See [[SNP-LOG-001]] for the full decision log.
+All KH and NC decisions locked in session LOG-001 are in force. See [[LOG-001]] for the full decision log.
 
 ---
 

@@ -288,7 +288,7 @@ No ambiguous states allowed.
 **Project:** CJK KnowledgeHub Governance
 **Active phase:** Phase 5 -- KnowledgeHub rebuild
 **Authoritative freeze:** [[INT-006]]
-**Session log:** [[SNP-LOG-001]]
+**Session log:** [[LOG-001]]
 **Naming convention:** [[TPL-001]]
 
 Phase 5 objective: Full rebuild of the CJK KnowledgeHub under the AI Systems Architecture positioning confirmed in INT-006. Clean slate. Artefact-first information architecture.

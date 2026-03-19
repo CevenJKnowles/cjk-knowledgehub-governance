@@ -1,5 +1,5 @@
 ---
-id: SNP-LOG-001
+id: LOG-001
 title: KnowledgeHub Strategic Pivot
 type: log
 status: active

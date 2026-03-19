@@ -8,7 +8,7 @@ created: 2026-03-19
 updated: 2026-03-19
 provenance: ai-assisted
 tags: [session, alignment, phase-5]
-related: [INT-006, SNP-LOG-001, TPL-001]
+related: [INT-006, LOG-001, TPL-001]
 ref: []
 repo: []
 ---

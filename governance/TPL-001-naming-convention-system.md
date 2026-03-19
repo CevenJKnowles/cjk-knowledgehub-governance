@@ -8,7 +8,7 @@ created: 2026-03-19
 updated: 2026-03-19
 provenance: ai-assisted
 tags: [governance, naming, convention, yaml, zettlr]
-related: [SNP-LOG-001]
+related: [LOG-001]
 ref: []
 repo: []
 ---
