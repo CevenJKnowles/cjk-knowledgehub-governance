@@ -1,12 +1,14 @@
 ```yaml
-id: GOV-INT-02
+id: DEP-GOV-INT-02
 layer: GOV
 type: INT
 phase: P2
-status: frozen
+status: archived
 created: 2026-02-08
-updated: 2026-02-12
+updated: 2026-03-19
 ```
+***Superseded by \[\[INT-006]] on 2026-03-19.***
+
 # Phase 2 | Architecture & Presentation Intent Freeze (Canonical)
 
 **Status:** Locked  

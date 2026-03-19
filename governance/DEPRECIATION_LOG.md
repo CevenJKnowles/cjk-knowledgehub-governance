@@ -5,7 +5,7 @@ type: POL
 phase: X
 status: active
 created: 2026-02-13
-updated: 2026-02-16
+updated: 2026-03-19
 ```
 ---
 # DEPRECIATION LOG
@@ -84,3 +84,28 @@ Renamed:
 Reason:
 YAML schema normalization and layer correction to governance.
 No content changes.
+
+---
+
+---
+## 2026-03-19 — KnowledgeHub Strategic Reset
+
+All four documents below are superseded by INT-006-knowledgehub-strategic-reset-intent-freeze.md following a full strategic reset of the KnowledgeHub project.
+
+### Deprecated Files
+
+- GOV-INT-02-p2-intent-freeze.md
+- GOV-INT-03-p3-intent-freeze.md
+- GOV-INT-04-p4-intent-freeze.md
+- GOV-INT-05-phase4-vective-freeze.md
+
+Superseded By:
+- INT-006-knowledgehub-strategic-reset-intent-freeze.md
+
+Reason:
+Full strategic pivot confirmed 2026-03-19. Primary positioning shifted from prompt engineering to AI Systems Architecture. Vective substrate deprecated entirely. Six-domain IA replaced with new artefact-first structure. All prior architectural, execution, and evaluation freezes built on the obsolete IA are superseded.
+
+Impact:
+No content loss. All deprecated documents moved to /archive per protocol. INT-006 is the single authoritative freeze going forward.
+
+---

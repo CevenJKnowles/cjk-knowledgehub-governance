@@ -1,12 +1,14 @@
 ---
-id: GOV-INT-05
+id: DEP-GOV-INT-05
 layer: GOV
 type: INT
 phase: P4
-status: active
+status: archived
 created: 2026-02-16
-updated: 2026-02-16
+updated: 2026-03-19
 ---
+
+***Superseded by \[\[INT-006]] on 2026-03-19.***
 
 # Phase 4 — Vective Evaluation Doctrine Intent Freeze
 

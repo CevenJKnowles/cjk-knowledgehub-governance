@@ -1,12 +1,15 @@
 ```yaml
-id: GOV-INT-03
+id: DEP-GOV-INT-03
 layer: GOV
 type: INT
 phase: P3
-status: frozen
+status: archived
 created: 2026-02-08
-updated: 2026-02-12
+updated: 2026-03-19
 ```
+
+***Superseded by \[\[INT-006]] on 2026-03-19.***
+
 # Phase 3 | Execution Planning Intent Freeze (Canonical)
 
 **Project:** CJK_Knowledgehub  
