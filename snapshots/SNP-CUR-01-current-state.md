@@ -2,22 +2,22 @@
 id: SNP-CUR-01
 layer: SNP
 type: CUR
-phase: P4
-status: locked
+phase: P5
+status: active
 created: 2026-02-13
-updated: 2026-02-16
+updated: 2026-03-19
 ---
 
 # CURRENT STATE
 
-Control Pack Version: 1.0  
-Last Structural Change: 2026-02-16  
+Control Pack Version: 2.0
+Last Structural Change: 2026-03-19
 
-Phase 4 Status: LOCKED  
-Lock Date: 2026-02-16  
-Governance Integrity: Verified  
-Structural Drift: None detected  
-Next Phase: P5 Preparation  
+Phase 5 Status: ACTIVE
+Start Date: 2026-03-19
+Governance Integrity: Verified
+Structural Drift: None detected
+Next Phase: N/A -- build phase
 
 Active File Under Revision: None
 
@@ -25,11 +25,11 @@ Active File Under Revision: None
 
 ## 1. Project Status
 
-Project: cjk-knowledgehub-governance  
-Purpose: Internal documentation refactor and governance control system  
+Project: cjk-knowledgehub-governance
+Purpose: Governance and control layer for the CJK KnowledgeHub rebuild
 
-Current Phase:  
-Phase 4 complete. Governance layer stabilized. Preparing Phase 5.
+Current Phase:
+Phase 5 active. Full strategic reset complete. KnowledgeHub rebuild in progress under INT-006.
 
 ---
 
@@ -37,61 +37,74 @@ Phase 4 complete. Governance layer stabilized. Preparing Phase 5.
 
 Before executing any task, the assistant must:
 
-1. Read `MASTER_PROJECT_PROMPT.md` in full.
+1. Read `MASTER_PROMPT.md` in full.
 2. Read `snapshots/SNP-CUR-01-current-state.md` in full.
 3. Read `SESSION_PROMPT.md` in full.
 4. Confirm alignment with all frozen rules and constraints.
 5. Identify whether a new file is explicitly declared for revision.
 6. State understanding of current priorities before acting.
 
-No assumptions.  
-No reinterpretation.  
+No assumptions.
+No reinterpretation.
 No structural changes without explicit confirmation.
 
 ---
 
-## 2. Completed (Phase 4)
+## 2. Completed
 
+### Phase 1--4 (pre 2026-03-19)
 - Repository scaffold created.
 - Governance folder structured.
 - Deterministic naming convention frozen.
 - YAML schema v0.2 frozen.
 - Folder hierarchy frozen.
 - Deprecation protocol frozen.
-- Planning cluster merged into PLN-MAP-01.
-- Legacy planning files deprecated and archived.
-- Split 00a_CJK_KH_Brief.md.
-- Deprecated legacy hybrid brief.
-- Split `04c_implementation-a-content-build.md` into control doctrine + planning doc.
-- Deprecated legacy Phase 4 implementation document.
-- Consolidated Phase 4 snapshot files into SNP-PH4-01.
-- Deprecated legacy Phase 4 snapshot fragments.
-- Normalized Phase 4 Vective intent freeze to governance schema.
-- Corrected YAML to frozen format.
-- Completed DOCUMENT_MAP.md (governance hardened).
+- All legacy planning and snapshot files deprecated and archived.
+- Phase 4 stabilisation complete.
+
+### Phase 5 Initialisation (2026-03-19)
+- Full strategic reset confirmed.
+- Positioning pivoted to AI Systems Architecture.
+- New IA confirmed: six sections, artefact-first.
+- INT-006 drafted and filed -- supersedes GOV-INT-02 through GOV-INT-05.
+- GOV-INT-02 through GOV-INT-05 archived.
+- SNP-LOG-001 filed.
+- TPL-001 (unified naming convention) filed.
+- MASTER_PROMPT v2.0 filed -- supersedes DEP-MASTER_PROJECT_PROMPT_v1.md.
+- DEPRECIATION_LOG updated.
+- Governance repo committed and pushed.
 
 ---
 
 ## 3. In Progress
 
-None.
+- SESSION_PROMPT.md update (Phase 5 context).
+- SNP-CUR-01 update (this document).
 
 ---
 
-## 4. Pending High Priority
+## 4. Pending -- Pre-Build
 
-None blocking.
+- Simpleshow description: exact wording correction from CJK.
+- Navigation order for six sections: to be locked in next ADR.
+- Creative section scope: deferred to ADR.
 
 ---
 
 ## 5. Next Immediate Task
 
-Initiate Phase 5 preparation under stabilized governance layer.
+Resolve two open items from INT-006 Section 9, then begin KnowledgeHub build.
 
 ---
+
 ## Next Session Anchor
 
-Phase 5 planning initialization.
+INT-006 is the current authoritative freeze.
+Session decisions: [[SNP-LOG-001]]
+Naming convention: [[TPL-001]]
+Master prompt: MASTER_PROMPT.md v2.0
+Status: Strategic reset complete. Two open items before build begins.
 
 ---
-This document must be updated whenever structural or authority changes occur.
+
+***This document must be updated whenever structural or authority changes occur.***

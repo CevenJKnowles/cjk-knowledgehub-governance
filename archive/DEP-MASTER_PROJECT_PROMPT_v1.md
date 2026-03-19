@@ -1,12 +1,15 @@
 ---
-id: GOV-POL-01
+id: DEP-GOV-POL-01
 layer: GOV
 type: POL
 phase: X
-status: active
+status: archived
 created: 2026-02-16
-updated: 2026-02-16
+updated: 2026-03-19
 ---
+
+***Superseded by \[\[MASTER_PROMPT]] on 2026-03-19.***
+
 ---
 # MASTER_PROJECT_PROMPT
 ## CJK KnowledgeHub Governance Control System

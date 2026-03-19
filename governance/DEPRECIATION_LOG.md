@@ -98,6 +98,8 @@ All four documents below are superseded by INT-006-knowledgehub-strategic-reset-
 - GOV-INT-03-p3-intent-freeze.md
 - GOV-INT-04-p4-intent-freeze.md
 - GOV-INT-05-phase4-vective-freeze.md
+- DEP-MASTER\_PROJECT\_PROMPT\_v1.md
+
 
 Superseded By:
 - INT-006-knowledgehub-strategic-reset-intent-freeze.md
