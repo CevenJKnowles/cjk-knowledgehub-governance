@@ -1,36 +1,31 @@
 ---
 id: SNP-CUR-01
-layer: SNP
-type: CUR
-phase: P5
+type: snp
 status: active
+version: "1.3"
 created: 2026-02-13
 updated: 2026-03-20
+provenance: ai-assisted
+scope: [knowledgehub]
+tags: [snapshot, current-state, phase-5]
+related: [LOG-003, ADR-003, ADR-004, ADR-005, ADR-006, ADR-007, ADR-008, TPL-001]
+ref: []
+repo: []
 ---
 
 # CURRENT STATE
 
 Control Pack Version: 2.0
 Last Structural Change: 2026-03-20
+Snapshot Version: 1.3
 
-Phase 5 Status: ACTIVE
+Phase 5 Status: ACTIVE — Build in progress
 Start Date: 2026-03-19
 Governance Integrity: Verified
 Structural Drift: None detected
-Next Phase: N/A -- build phase
+Next Phase: N/A -- content population
 
 Active File Under Revision: None
-
----
-
-## 1. Project Status
-
-Project: cjk-knowledgehub-governance
-Purpose: Governance and control layer for the CJK KnowledgeHub rebuild
-
-Current Phase:
-Phase 5 active. Full strategic reset complete. Collaboration infrastructure
-established. All pre-build blocking items resolved. Build may begin.
 
 ---
 
@@ -48,6 +43,18 @@ Before executing any task, the assistant must:
 No assumptions.
 No reinterpretation.
 No structural changes without explicit confirmation.
+
+---
+
+## 1. Project Status
+
+Project: cjk-knowledgehub-governance
+Purpose: Governance and control layer for the CJK KnowledgeHub rebuild
+
+Current Phase:
+Phase 5 active. Full visual design locked. IA skeleton locked. Governance ADRs
+filed. mkdocs.yml and custom.css implemented. Site rendering locally. Content
+population is the next work.
 
 ---
 
@@ -78,24 +85,35 @@ No structural changes without explicit confirmation.
 ### Phase 5 Pre-Build Locks (2026-03-19, KnowledgeHub Reboot Meeting)
 - Navigation order locked: Home · Work · Method · Credentials · About · Legacy.
 - Sixth section renamed from "Creative" to "Legacy".
-- Simpleshow description locked: Conceptor and Project Manager, Freelance,
-  Simpleshow GmbH, Berlin, DACH and UK, Nov 2020 – Dec 2024. Four bullets:
-  cross-functional team direction, stakeholder management, concept structuring,
-  and AI tool integration. Canonical source: DAT-CV-CJK-001-en-2026-03-10.md.
+- Simpleshow description locked per KH-004.
 - All pre-build blocking items from INT-006 Section 9 resolved.
-- Reference session: LOG-001.
+- Reference session: [[LOG-001]].
 
 ### Phase 5 Collaboration Setup (2026-03-20)
 - Claude Project Files confirmed as static snapshots. Manual re-upload workflow established.
-- GitHub repos confirmed accessible to Claude via GitHub integration (project knowledge search).
-- Notion Collaboration Hub established as shared external memory for CJK/Claude sessions.
-- Hub structure: Project Context, Session Start Protocol, Session Log, Decision Register,
-  Source File Index, Glossary, Parking Lot, Kanban.
-- Dual-repo authority structure confirmed: governance repo is authority; primary repo is output.
-- INT-006 reviewed and confirmed as the active authoritative freeze.
-- All source files reviewed and absorbed into working context.
+- GitHub repos confirmed accessible to Claude via GitHub integration.
+- Notion Collaboration Hub established as shared external memory.
+- Dual-repo authority structure confirmed.
+- INT-006 reviewed and confirmed as active authoritative freeze.
 - LOG-002 filed.
-- SNP-CUR-01 updated (this document).
+
+### Phase 5 Visual Design, IA, and Build Foundation (2026-03-20, Session 6)
+- VIS-004 voided (logged in error). VIS-004b locked: Cooper Hewitt / Barlow / Hack.
+- `scope` field added to YAML schema via ADR-003.
+- Navigation order updated: Home · Projects · Experience · Method · Credentials
+  · About · Legacy. KH-010 superseded by KH-012.
+- IA skeleton locked: KH-013. Seven sections fully defined.
+- Credentials page structure locked: KH-014. 25 certifications, two domains.
+- Contact approach locked: CON-001. hello@cevenknowles.com + Formspree.
+- Social footer locked: CON-002. Six platforms confirmed.
+- ADR-003 through ADR-008 filed to governance/.
+- mkdocs.yml fully updated and pushed.
+- custom.css created and pushed. Full visual design implementation.
+- Cooper Hewitt font files self-hosted at docs/assets/fonts/cooperhewitt/.
+- Docs structure updated to match locked nav. Old work/ directory removed.
+- Site confirmed rendering locally via mkdocs serve. No errors.
+- LOG-003 filed.
+- SNP-CUR-01 updated (this document, v1.3).
 
 ---
 
@@ -105,20 +123,31 @@ None.
 
 ---
 
-## 4. Pending -- Build
+## 4. Pending -- Content Population
 
-All pre-build blocking items are resolved. The following build tasks are next:
+Site is rendering. All structural and visual decisions are locked.
+Content to be written for each section in order:
 
-- New mkdocs.yml scaffold aligned to INT-006 IA and locked navigation order.
-- Home page content.
-- Work section: IO-III case study (first).
+1. Home — hero statement, positioning, signpost cards
+2. Projects — IO-III, Prompt Pattern Library, Governance repo, Agentic Applications
+3. Experience — Simpleshow, IMD, LUDWIG
+4. Method — How I Work, ADRs, Tools and Environment
+5. Credentials — 25 certifications, two domains
+6. About — profile statement, contact
+7. Legacy — 26-year practice overview, artefacts
 
 ---
 
 ## 5. Next Immediate Task
 
-Begin mkdocs.yml scaffold.
-Navigation order: Home · Work · Method · Credentials · About · Legacy.
+Begin content planning and writing. Start with Home page.
+
+---
+
+## 6. Visual Punch-List (Deferred to Polish Pass)
+
+- Cooper Hewitt in nav reads slightly condensed at screen resolution.
+  Fix: increase letter-spacing in custom.css during polish pass.
 
 ---
 
@@ -126,13 +155,15 @@ Navigation order: Home · Work · Method · Credentials · About · Legacy.
 
 INT-006 is the current authoritative freeze.
 Session decisions (2026-03-19): [[LOG-001]]
-Session decisions (2026-03-20): [[LOG-002]]
+Session decisions (2026-03-20 setup): [[LOG-002]]
+Session decisions (2026-03-20 build): [[LOG-003]]
+Governance ADRs: [[ADR-003]] [[ADR-004]] [[ADR-005]] [[ADR-006]] [[ADR-007]] [[ADR-008]]
 Naming convention: [[TPL-001]]
 Master prompt: MASTER_PROMPT.md v2.0
 Collaboration Hub: https://www.notion.so/329d296c3350814cbfa8cccac299d283
 
-Status: All pre-build blocking items resolved. Build phase begins next session.
+Status: Site rendering. Content population is next.
 
 ---
 
-***This document must be updated whenever structural or authority changes occur.***
+*This document must be updated whenever structural or authority changes occur.*
