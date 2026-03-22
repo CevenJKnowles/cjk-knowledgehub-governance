@@ -1,0 +1,15 @@
+{
+  "editor.formatOnSave": true,
+  "markdownlint.config": {
+    "MD041": false,
+    "MD013": false
+  },
+  "cSpell.words": [
+    "CJK", "KnowledgeHub", "knowledgehub", "ADR", "ADRs",
+    "governance", "vective", "DEP", "CTL", "GOV", "PLN",
+    "DAT", "SNP", "INT", "TPL", "cevenjknowles"
+  ],
+  "files.exclude": {
+    "**/site": true
+  }
+}
