@@ -2,13 +2,13 @@
 id: SNP-CUR-01
 type: snp
 status: active
-version: "1.4"
+version: "1.5"
 created: 2026-02-13
-updated: 2026-03-22
+updated: 2026-04-01
 provenance: ai-assisted
 scope: [knowledgehub]
 tags: [snapshot, current-state, phase-5]
-related: [LOG-003, LOG-004, LOG-005, ADR-003, ADR-004, ADR-005, ADR-006, ADR-007, ADR-008, ADR-009, TPL-001]
+related: [LOG-003, LOG-004, LOG-005, LOG-006, ADR-003, ADR-004, ADR-005, ADR-006, ADR-007, ADR-008, ADR-009, ADR-010, ADR-011, TPL-001]
 ref: []
 repo: []
 ---
@@ -16,8 +16,8 @@ repo: []
 # CURRENT STATE
 
 Control Pack Version: 2.0
-Last Structural Change: 2026-03-22
-Snapshot Version: 1.4
+Last Structural Change: 2026-04-01
+Snapshot Version: 1.5
 
 Phase 5 Status: ACTIVE — Content population in progress
 Start Date: 2026-03-19
@@ -53,10 +53,11 @@ Purpose: Governance and control layer for the CJK KnowledgeHub rebuild
 
 Current Phase:
 Phase 5 active. Full visual design locked. IA skeleton locked. Governance
-ADRs filed. mkdocs.yml and custom.css implemented. Bilingual support
-(EN/DE) live via mkdocs-static-i18n. Site rendering locally. Content
-population is the active work. Home and Projects sections complete.
-Experience and Method sections partially complete (see below).
+ADRs filed (ADR-003 through ADR-011). mkdocs.yml and custom.css implemented.
+Bilingual support (EN/DE) live via mkdocs-static-i18n. Site rendering
+locally. Content population is the active work. Home, Projects, Experience,
+and Method (three sub-pages) are committed. Method index produced and
+confirmed -- awaiting commit. Credentials is the next section.
 
 ---
 
@@ -125,17 +126,12 @@ Experience and Method sections partially complete (see below).
   - Client framing locked: "global clients in the banking, pharmacology,
     automotive, and tech industries."
   - Job title locked: "Conceptor & Project Manager."
-  - Years of practice: 26 throughout.
 - Method section: three pages committed EN and DE.
   - How I Work: working principles, ADR-first, constraints as features,
     drift anticipation.
   - Architecture Decision Records: practice explanation, links to
     io-architecture ADR index and KnowledgeHub governance repo.
-  - Tools and Environment: comprehensive -- 15 categories covering AI/LLM
-    infrastructure, LLM platforms, development, languages, statistical
-    tools, knowledge/documentation, web/CMS, UI/UX, operating environment,
-    admin/productivity, video/broadcast, audio, visual design/print,
-    physical production skills, and teaching/lecturing.
+  - Tools and Environment: comprehensive -- 15 categories.
 - Content committed:
   - `docs/experience/index.md` / `.de.md` -- v0.1
   - `docs/method/how-i-work.md` / `.de.md` -- v0.2
@@ -143,13 +139,27 @@ Experience and Method sections partially complete (see below).
   - `docs/method/tools-and-environment.md` / `.de.md` -- v0.3
 - LOG-005 filed.
 
+### Phase 5 Scope Realignment and Method Index (2026-04-01, Session 10)
+- Method index content direction resolved. Text confirmed by CJK.
+- Copy rule locked: no tenure figures in body copy. COP-001. ADR-010 filed.
+- Canonical Narrative Invariant locked: KH-018. ADR-011 filed.
+  Core thesis: "What allows a complex thing to hold together as conditions
+  change?" governs all content. Section-level contracts locked for all
+  seven nav items. Global Writing Rule and editorial QA checklist locked.
+- About section scope sentence corrected per COP-001: "sustained
+  interdisciplinary practice" replaces tenure figure.
+- Content produced and confirmed (awaiting commit):
+  - `docs/method/index.md` -- v0.1
+  - `docs/method/index.de.md` -- v0.1
+- LOG-006 filed.
+
 ---
 
 ## 3. In Progress / Held
 
 | File | Status | Note |
 |---|---|---|
-| `docs/method/index.md` / `.de.md` | Held -- not committed | Content direction unresolved. Interdisciplinary Design Philosophy angle identified as correct framing. Opening domain list and "The material changes. The method holds." are strong. Third paragraph and close need rethinking. Begin next session here. |
+| `docs/method/index.md` / `.de.md` | Confirmed -- awaiting commit | Produced Session 10. Ready to commit. |
 
 ---
 
@@ -157,17 +167,16 @@ Experience and Method sections partially complete (see below).
 
 Remaining sections to write:
 
-1. Method index -- EN and DE (held, see above)
-2. Credentials -- 25 certifications, two domains
-3. About -- profile statement, contact
-4. Legacy -- 26-year practice overview, artefacts
+1. Credentials -- 25 certifications, two domains
+2. About -- profile statement, contact
+3. Legacy -- practice overview, artefacts
 
 ---
 
 ## 5. Next Immediate Task
 
-Resolve Method index content direction. Produce and commit EN and DE.
-Then proceed to Credentials section.
+CJK commits Method index EN and DE, ADR-010, and ADR-011.
+Then proceed to Credentials section content production.
 
 ---
 
@@ -183,20 +192,22 @@ Then proceed to Credentials section.
 | Item | Carried from |
 |---|---|
 | TPL-001: `scope` field undocumented at v2.0 | Session 6 |
-| German ß convention: "einschließlich" vs "einschliesslich" -- CJK to confirm preferred convention | Session 9 |
+| German ß convention: "einschließlich" vs "einschliesslich" -- CJK to confirm | Session 9 |
 
 ---
 
 ## Next Session Anchor
 
 INT-006 is the current authoritative freeze.
-Session log references: [[LOG-001]] [[LOG-002]] [[LOG-003]] [[LOG-004]] [[LOG-005]]
-Governance ADRs: [[ADR-003]] through [[ADR-009]]
+KH-018 (ADR-011) is the canonical narrative invariant. All pages must be
+validated against the Global Writing Rule before commit.
+Session log references: [[LOG-001]] [[LOG-002]] [[LOG-003]] [[LOG-004]] [[LOG-005]] [[LOG-006]]
+Governance ADRs: [[ADR-003]] through [[ADR-011]]
 Naming convention: [[TPL-001]]
 Master prompt: MASTER_PROMPT.md v2.0
 Collaboration Hub: https://www.notion.so/329d296c3350814cbfa8cccac299d283
 
-Status: Content population active. Method index held. Credentials next.
+Status: Content population active. Method index confirmed. Credentials next.
 
 ---
 
