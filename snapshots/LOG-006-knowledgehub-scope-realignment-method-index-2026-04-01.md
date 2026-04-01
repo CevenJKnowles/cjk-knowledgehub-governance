@@ -1,6 +1,6 @@
 ---
 id: LOG-006
-title: "LOG | Session 10 — Scope Realignment and Method Index — 2026-04-01"
+title: "LOG | Session 10 — Scope Realignment, Method Index, Home, Credentials — 2026-04-01"
 type: log
 status: active
 version: "1.0"
@@ -8,49 +8,39 @@ created: 2026-04-01
 updated: 2026-04-01
 provenance: ai-assisted
 scope: [knowledgehub]
-tags: [session-log, phase-5, content, method, scope, adr]
+tags: [session-log, phase-5, content, method, credentials, home, scope, adr]
 related: [LOG-005, ADR-010, ADR-011, SNP-CUR-01]
 ref: []
 repo: []
 ---
 
-# LOG | Session 10 — Scope Realignment and Method Index — 2026-04-01
+# LOG | Session 10 — Scope Realignment, Method Index, Home, Credentials — 2026-04-01
 
 ---
 
 ## Session Summary
 
-Session began with an init from the Notion Collaboration Hub. Two primary
-workstreams were completed: Method index content production and a strategic
-scope realignment.
+Four workstreams completed: Method index content production, strategic scope
+realignment, Home page revision, and Credentials section production.
 
 ---
 
-## 1. Method Index — Content Resolved and Delivered
+## 1. Method Index — Content Resolved and Committed
 
 The Method index content direction was unresolved at the close of Session 9.
 The Interdisciplinary Design Philosophy angle had been identified as correct
 but not fully executed.
 
-In this session, CJK submitted a revised text for assessment. Four of six
-paragraphs were assessed as working. Two required revision:
+CJK submitted a revised text. Four of six paragraphs were assessed as working.
+Two required revision: Para 2 was too generic and missed the cross-domain
+distinctiveness; Para 5 was still navigational. A revised version was produced
+with the domain list leading Para 2 and Para 5 rewritten to describe three
+levels of visibility without naming or signposting sub-pages.
 
-- Para 2 was too generic -- it described good professional practice without
-  connecting the cross-domain distinctiveness that is the site's actual claim.
-- Para 5 was still navigational -- naming sub-pages and describing their
-  function rather than functioning as genuine prose.
+CJK confirmed the text. Both files committed.
 
-A revised version was produced. The domain list (broadcasting, education,
-print, systems design, AI infrastructure) replaced the "26-year" opening in
-Para 2, resolving the COP-001 issue simultaneously. Para 5 was rewritten to
-describe three levels of visibility without naming or signposting sub-pages.
-
-CJK confirmed the revised text. Files produced and delivered:
-
-- `docs/method/index.md` -- v0.1, confirmed, ready to commit
-- `docs/method/index.de.md` -- v0.1, confirmed, ready to commit
-
-Status: awaiting CJK commit. Not yet in the repo.
+- `docs/method/index.md` -- v0.1, committed
+- `docs/method/index.de.md` -- v0.1, committed
 
 ---
 
@@ -59,58 +49,88 @@ Status: awaiting CJK commit. Not yet in the repo.
 During the Method index revision, the "26 years" / "26-year" pattern was
 identified as overused across the site. CJK confirmed it should stop.
 
-Decision locked: No tenure figures in body copy anywhere on the site, in
-either language. The domain list carries the weight of breadth.
+Decision locked: no tenure figures in body copy anywhere on the site, in
+either language. The domain list carries the weight of breadth. This does
+not apply to the GitHub profile, LinkedIn, or CV, where format convention
+may make a tenure figure appropriate.
 
-Governance ID: COP-001. Filed as ADR-010 in this session.
+Governance ID: COP-001. Filed as ADR-010.
 
 ---
 
 ## 3. Scope Realignment — Canonical Narrative Invariant Locked
 
-CJK raised a strategic observation: the job market for his actual experience
+CJK raised a strategic observation: the job market at his actual experience
 level is better served by a coherent generalist systems narrative than by
 framing that reaches toward positions requiring qualifications not yet held.
 
-CJK proposed and confirmed a Canonical Narrative Invariant document
+CJK proposed and confirmed the Canonical Narrative Invariant document,
 establishing a single governing question for all site content:
 
 What allows a complex thing to hold together as conditions change?
 
-The document includes:
-- Core thesis
-- Primary scope goal
-- Section-level alignment contracts for all seven nav items
-- A Global Writing Rule (per-page testable challenge)
-- An editorial QA checklist
+The document includes the core thesis, primary scope goal, section-level
+alignment contracts for all seven nav items, a Global Writing Rule (per-page
+testable challenge), and an editorial QA checklist.
 
-One conflict was flagged and resolved before locking: the About section
-scope sentence used "a 26-year practice", which conflicts with COP-001.
-Corrected to "a sustained interdisciplinary practice" before lock.
+One conflict was flagged and resolved before locking: the About section scope
+sentence used "a 26-year practice", conflicting with COP-001. Corrected to
+"a sustained interdisciplinary practice" before lock.
 
-Governance ID: KH-018. Filed to Notion Collaboration Hub and as ADR-011
-in this session.
+Governance ID: KH-018. Filed to Notion Collaboration Hub and as ADR-011.
 
 ---
 
-## 4. Files Committed This Session
+## 4. Home Page — Revised and Committed
 
-None. Session was content production and governance. Commits pending.
+The Home page was revised to align with the Home to Projects to Method arc
+established by KH-018. Para 3 (method steps) was identified as duplicating
+Method and cut. A single bridge sentence ("The method is consistent. The
+context it now operates in is not.") replaced it. Para 4 (current AI context)
+was expanded from two sentences to a full paragraph. The signage paragraph
+(Para 5) was removed entirely.
+
+This unfreezes `docs/index.md` from v1.0 (frozen Session 7). CJK confirmed
+the unfreeze was intentional.
+
+- `docs/index.md` -- v2.0, committed (replaces frozen v1.0)
+- `docs/index.de.md` -- v2.0, committed (replaces frozen v1.0)
 
 ---
 
-## 5. Files Ready to Commit
+## 5. Credentials — Produced and Committed
+
+Credentials section produced with domain-level interpretation agreed by CJK.
+Each domain receives a lead-in paragraph interpreting the learning through
+the structural method, followed by a scannable list with each certificate name
+linked to its hosted JPG in `docs/assets/certificates/`.
+
+Three directory issues were also resolved before committing:
+- `docs/method/index-de.md` renamed to `docs/method/index.de.md` (hyphen
+  instead of dot would have broken mkdocs-static-i18n language switching).
+- Three stray files removed from `docs/credentials/`: `credentials.md`,
+  `ai-engineering-governance.md`, `statistical-mathematical.md`.
+- `docs/projects/agentic-applications.md` deleted per KH-016 (out of scope).
+
+- `docs/credentials/index.md` -- v0.1, committed
+- `docs/credentials/index.de.md` -- v0.1, committed
+
+---
+
+## 6. Files Committed This Session
 
 | File | Version | Status |
 |---|---|---|
-| `docs/method/index.md` | v0.1 | Confirmed, awaiting commit |
-| `docs/method/index.de.md` | v0.1 | Confirmed, awaiting commit |
-| `governance/ADR-010-copy-rule-no-tenure-figures.md` | v1.0 | This session |
-| `governance/ADR-011-scope-alignment-canonical-narrative-invariant.md` | v1.0 | This session |
+| `docs/method/index.md` | v0.1 | Committed |
+| `docs/method/index.de.md` | v0.1 | Committed |
+| `docs/index.md` | v2.0 | Committed (unfrozen) |
+| `docs/index.de.md` | v2.0 | Committed (unfrozen) |
+| `docs/credentials/index.md` | v0.1 | Committed |
+| `docs/credentials/index.de.md` | v0.1 | Committed |
 
 ---
 
-## 6. Open Items Carried Forward
+## 7. Open Items Carried Forward
 
 | Item | Carried from |
 |---|---|
@@ -120,12 +140,11 @@ None. Session was content production and governance. Commits pending.
 
 ---
 
-## 7. Agreed Next Steps
+## 8. Agreed Next Steps
 
-1. CJK commits Method index EN and DE to main repo.
-2. CJK commits ADR-010 and ADR-011 to governance repo.
-3. Move to Credentials section content production.
-4. Visual polish pass on custom.css once all content is in place.
+1. About section EN and DE
+2. Legacy section EN and DE
+3. Visual polish pass on custom.css once all content is in place
 
 ---
 

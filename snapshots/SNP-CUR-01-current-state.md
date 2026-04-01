@@ -56,8 +56,8 @@ Phase 5 active. Full visual design locked. IA skeleton locked. Governance
 ADRs filed (ADR-003 through ADR-011). mkdocs.yml and custom.css implemented.
 Bilingual support (EN/DE) live via mkdocs-static-i18n. Site rendering
 locally. Content population is the active work. Home, Projects, Experience,
-and Method (three sub-pages) are committed. Method index produced and
-confirmed -- awaiting commit. Credentials is the next section.
+Method (all four pages), and Credentials are committed. About and Legacy
+remain.
 
 ---
 
@@ -114,7 +114,7 @@ confirmed -- awaiting commit. Credentials is the next section.
 - Standing rule locked: no negative comparisons in copy; no punchy
   taglines outside CJK register.
 - Content committed:
-  - `docs/index.md` / `.de.md` -- v1.0, frozen
+  - `docs/index.md` / `.de.md` -- v1.0, frozen (superseded Session 10)
   - `docs/projects/index.md` / `.de.md` -- v0.1
   - `docs/projects/io-iii-architecture.md` / `.de.md` -- v0.2
   - `docs/projects/prompt-pattern-library.md` / `.de.md` -- v0.3
@@ -123,15 +123,7 @@ confirmed -- awaiting commit. Credentials is the next section.
 
 ### Phase 5 Experience and Method Content (2026-03-22, Session 9)
 - Experience section committed as single page EN and DE.
-  - Client framing locked: "global clients in the banking, pharmacology,
-    automotive, and tech industries."
-  - Job title locked: "Conceptor & Project Manager."
 - Method section: three pages committed EN and DE.
-  - How I Work: working principles, ADR-first, constraints as features,
-    drift anticipation.
-  - Architecture Decision Records: practice explanation, links to
-    io-architecture ADR index and KnowledgeHub governance repo.
-  - Tools and Environment: comprehensive -- 15 categories.
 - Content committed:
   - `docs/experience/index.md` / `.de.md` -- v0.1
   - `docs/method/how-i-work.md` / `.de.md` -- v0.2
@@ -139,27 +131,31 @@ confirmed -- awaiting commit. Credentials is the next section.
   - `docs/method/tools-and-environment.md` / `.de.md` -- v0.3
 - LOG-005 filed.
 
-### Phase 5 Scope Realignment and Method Index (2026-04-01, Session 10)
-- Method index content direction resolved. Text confirmed by CJK.
+### Phase 5 Scope Realignment, Method Index, Home, Credentials (2026-04-01, Session 10)
+- Method index content direction resolved. Text confirmed and committed.
 - Copy rule locked: no tenure figures in body copy. COP-001. ADR-010 filed.
 - Canonical Narrative Invariant locked: KH-018. ADR-011 filed.
   Core thesis: "What allows a complex thing to hold together as conditions
-  change?" governs all content. Section-level contracts locked for all
-  seven nav items. Global Writing Rule and editorial QA checklist locked.
-- About section scope sentence corrected per COP-001: "sustained
-  interdisciplinary practice" replaces tenure figure.
-- Content produced and confirmed (awaiting commit):
-  - `docs/method/index.md` -- v0.1
-  - `docs/method/index.de.md` -- v0.1
+  change?" governs all content. Section-level contracts locked for all seven
+  nav items. Global Writing Rule and editorial QA checklist locked.
+- Home page revised to align with KH-018 arc. Para 3 cut (duplicated Method).
+  Bridge sentence added. Para 4 expanded. Signage paragraph removed.
+  Unfreezes v1.0 (frozen Session 7) with CJK confirmation.
+- Credentials section produced: domain-level interpretation, 25 certs linked
+  to hosted JPGs in `docs/assets/certificates/`.
+- Three directory issues resolved: method index DE filename corrected,
+  stray credentials files removed, agentic-applications.md deleted (KH-016).
+- Content committed:
+  - `docs/method/index.md` / `.de.md` -- v0.1
+  - `docs/index.md` / `.de.md` -- v2.0 (replaces frozen v1.0)
+  - `docs/credentials/index.md` / `.de.md` -- v0.1
 - LOG-006 filed.
 
 ---
 
 ## 3. In Progress / Held
 
-| File | Status | Note |
-|---|---|---|
-| `docs/method/index.md` / `.de.md` | Confirmed -- awaiting commit | Produced Session 10. Ready to commit. |
+None.
 
 ---
 
@@ -167,16 +163,14 @@ confirmed -- awaiting commit. Credentials is the next section.
 
 Remaining sections to write:
 
-1. Credentials -- 25 certifications, two domains
-2. About -- profile statement, contact
-3. Legacy -- practice overview, artefacts
+1. About -- profile statement, obfuscated email, Formspree contact form
+2. Legacy -- practice overview, artefacts, Behance and Instagram links
 
 ---
 
 ## 5. Next Immediate Task
 
-CJK commits Method index EN and DE, ADR-010, and ADR-011.
-Then proceed to Credentials section content production.
+About section EN and DE.
 
 ---
 
@@ -207,7 +201,7 @@ Naming convention: [[TPL-001]]
 Master prompt: MASTER_PROMPT.md v2.0
 Collaboration Hub: https://www.notion.so/329d296c3350814cbfa8cccac299d283
 
-Status: Content population active. Method index confirmed. Credentials next.
+Status: Content population active. About section next.
 
 ---
 
