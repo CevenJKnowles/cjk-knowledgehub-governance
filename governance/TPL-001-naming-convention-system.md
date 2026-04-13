@@ -3,9 +3,9 @@ id: TPL-001
 title: CJK Unified Naming Convention System
 type: tpl
 status: locked
-version: "1.0"
+version: "2.0"
 created: 2026-03-19
-updated: 2026-03-19
+updated: 2026-04-13
 provenance: ai-assisted
 tags: [governance, naming, convention, yaml, zettlr]
 related: [LOG-001]
@@ -163,7 +163,8 @@ status: draft
 version: "1.0"
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
-provenance: human 
+provenance: human
+scope: []
 tags: []
 related: []
 ref: []
@@ -186,6 +187,7 @@ repo: []
 | `related` | No | IDs of related documents in same repo. |
 | `ref` | No | IDs of referenced documents or findings. |
 | `repo` | No | External repo references. Populated only when explicitly cross-referencing another repository. |
+|    scope    |  Yes  |                                                Knowledgehub, governance, global                                                |
 
 ### Status Lifecycle
 
