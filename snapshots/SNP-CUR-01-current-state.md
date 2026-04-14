@@ -1,14 +1,15 @@
 ---
 id: SNP-CUR-01
+title: Current State Snapshot
 type: snp
 status: active
-version: "1.5"
+version: "2.0"
 created: 2026-02-13
-updated: 2026-04-01
+updated: 2026-04-13
 provenance: ai-assisted
-scope: [knowledgehub]
+scope: knowledgehub
 tags: [snapshot, current-state, phase-5]
-related: [LOG-003, LOG-004, LOG-005, LOG-006, ADR-003, ADR-004, ADR-005, ADR-006, ADR-007, ADR-008, ADR-009, ADR-010, ADR-011, TPL-001]
+related: [LOG-003, LOG-004, LOG-005, LOG-006, LOG-007, ADR-003, ADR-004, ADR-005, ADR-006, ADR-007, ADR-008, ADR-009, ADR-010, ADR-011, ADR-012, TPL-001]
 ref: []
 repo: []
 ---
@@ -16,14 +17,14 @@ repo: []
 # CURRENT STATE
 
 Control Pack Version: 2.0
-Last Structural Change: 2026-04-01
-Snapshot Version: 1.5
+Last Structural Change: 2026-04-13
+Snapshot Version: 2.0
 
-Phase 5 Status: ACTIVE — Content population in progress
+Phase 5 Status: ACTIVE — Content complete. Visual polish complete. Pre-launch.
 Start Date: 2026-03-19
 Governance Integrity: Verified
 Structural Drift: None detected
-Next Phase: N/A -- content population continues
+Next Phase: Phase 6 — Domain redirect and public launch
 
 Active File Under Revision: None
 
@@ -52,12 +53,10 @@ Project: cjk-knowledgehub-governance
 Purpose: Governance and control layer for the CJK KnowledgeHub rebuild
 
 Current Phase:
-Phase 5 active. Full visual design locked. IA skeleton locked. Governance
-ADRs filed (ADR-003 through ADR-011). mkdocs.yml and custom.css implemented.
-Bilingual support (EN/DE) live via mkdocs-static-i18n. Site rendering
-locally. Content population is the active work. Home, Projects, Experience,
-Method (all four pages), and Credentials are committed. About and Legacy
-remain.
+Phase 5 complete. All seven content sections committed in EN and DE.
+Visual polish pass executed. Font switched to Lexend Exa (ADR-012).
+Sidebar social widget implemented. Site is in a publishable state.
+Phase 6 (domain redirect and public launch) is next.
 
 ---
 
@@ -135,21 +134,39 @@ remain.
 - Method index content direction resolved. Text confirmed and committed.
 - Copy rule locked: no tenure figures in body copy. COP-001. ADR-010 filed.
 - Canonical Narrative Invariant locked: KH-018. ADR-011 filed.
-  Core thesis: "What allows a complex thing to hold together as conditions
-  change?" governs all content. Section-level contracts locked for all seven
-  nav items. Global Writing Rule and editorial QA checklist locked.
-- Home page revised to align with KH-018 arc. Para 3 cut (duplicated Method).
-  Bridge sentence added. Para 4 expanded. Signage paragraph removed.
-  Unfreezes v1.0 (frozen Session 7) with CJK confirmation.
-- Credentials section produced: domain-level interpretation, 25 certs linked
-  to hosted JPGs in `docs/assets/certificates/`.
-- Three directory issues resolved: method index DE filename corrected,
-  stray credentials files removed, agentic-applications.md deleted (KH-016).
+- Home page revised to align with KH-018 arc. v2.0 committed.
+- Credentials section produced: 25 certs linked to hosted JPGs.
+- Three directory issues resolved.
 - Content committed:
   - `docs/method/index.md` / `.de.md` -- v0.1
-  - `docs/index.md` / `.de.md` -- v2.0 (replaces frozen v1.0)
+  - `docs/index.md` / `.de.md` -- v2.0
   - `docs/credentials/index.md` / `.de.md` -- v0.1
 - LOG-006 filed.
+
+### Phase 5 About, Legacy, Visual Polish, Font Switch (2026-04-13, Session 11)
+- ß convention locked: ß over SS throughout all German files.
+- TPL-001 v2.0 committed: `scope` field formally documented.
+- ADR-012 filed: Lexend Exa replaces Cooper Hewitt (supersedes VIS-004b).
+- About section produced EN and DE. First-person, warm register.
+- Legacy section produced EN and DE. Chronological essay with links.
+  Covers Anderecast, Cerusmedia, Lesley Rankine/Ruby, The Opiates,
+  Hinausgehen, ELECTROSEXUAL Best Music Video 2021, LUDWIG 2016--2019,
+  CHAOSTROPHY, public record.
+- Visual polish pass:
+  - pymdownx.emoji extension added (fixes icon rendering)
+  - Social icons switched to Simple Icons prefix throughout
+  - YouTube and Substack added to social list
+  - Sidebar social widget implemented via overrides/partials/nav.html
+  - Contact email as plain selectable text (anti-spam)
+  - Nav tab colours: light inactive #efefef / active #ff6700;
+    dark inactive #ff6700 / active #efefef
+  - UI icons (language, day/night): #ff6700 both modes
+  - Repo link visibility fixed for light mode
+  - Logo size set to 2.5rem
+- Content committed:
+  - `docs/about/index.md` / `.de.md` -- v0.3 / v0.1
+  - `docs/legacy/index.md` / `.de.md` -- v0.5 / v0.1
+- LOG-007 filed.
 
 ---
 
@@ -159,49 +176,51 @@ None.
 
 ---
 
-## 4. Pending -- Content Population
+## 4. Pending — Pre-Launch
 
-Remaining sections to write:
-
-1. About -- profile statement, obfuscated email, Formspree contact form
-2. Legacy -- practice overview, artefacts, Behance and Instagram links
+1. Cooper Hewitt font files cleanup commit
+   Remove `docs/assets/fonts/cooperhewitt/` once final visual review confirmed
+2. Stack Overflow profile URL verification before publish
+3. Contact form — Formspree implementation deferred; email displayed as
+   plain text in sidebar widget for now
+4. Final visual review on live/staging environment
 
 ---
 
 ## 5. Next Immediate Task
 
-About section EN and DE.
+Phase 6: Domain redirect cevenknowles.com → GitHub Pages.
 
 ---
 
-## 6. Visual Punch-List (Deferred to Polish Pass)
+## 6. Visual Punch-List
 
-- Cooper Hewitt in nav reads slightly condensed at screen resolution.
-  Fix: increase letter-spacing in custom.css during polish pass.
+- Cooper Hewitt cleanup commit pending
+- Stack Overflow URL to verify
 
 ---
 
 ## 7. Standing Open Items
 
-| Item | Carried from |
+| Item | Status |
 |---|---|
-| TPL-001: `scope` field undocumented at v2.0 | Session 6 |
-| German ß convention: "einschließlich" vs "einschliesslich" -- CJK to confirm | Session 9 |
+| Cooper Hewitt files removal | Pending cleanup commit |
+| Stack Overflow URL | Needs verification |
+| Contact form (Formspree) | Deferred — plain text email in sidebar for now |
 
 ---
 
 ## Next Session Anchor
 
 INT-006 is the current authoritative freeze.
-KH-018 (ADR-011) is the canonical narrative invariant. All pages must be
-validated against the Global Writing Rule before commit.
-Session log references: [[LOG-001]] [[LOG-002]] [[LOG-003]] [[LOG-004]] [[LOG-005]] [[LOG-006]]
-Governance ADRs: [[ADR-003]] through [[ADR-011]]
-Naming convention: [[TPL-001]]
+KH-018 (ADR-011) is the canonical narrative invariant.
+Session log references: [[LOG-001]] through [[LOG-007]]
+Governance ADRs: [[ADR-003]] through [[ADR-012]]
+Naming convention: [[TPL-001]] v2.0
 Master prompt: MASTER_PROMPT.md v2.0
 Collaboration Hub: https://www.notion.so/329d296c3350814cbfa8cccac299d283
 
-Status: Content population active. About section next.
+Status: All content complete. Visual polish complete. Pre-launch.
 
 ---
 
